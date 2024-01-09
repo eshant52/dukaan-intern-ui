@@ -49,7 +49,7 @@ export default function View() {
         <div className="flex items-center space-x-5">
           <span className="text-primary font-light">Payments</span>
           <TextButton className="text-secondary text-[0.8rem] font-light">
-            © How it works
+            ? How it works
           </TextButton>
         </div>
         <div className="flex justify-center self-center">
