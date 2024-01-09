@@ -1,7 +1,7 @@
 export default function OutlinedButton({ children, icon, iconPosition, className}) {
   return (
     <button
-      className={`text-secondary rounded-md border p-2 font-light ${className}`}
+      className={`text-secondary rounded-md border  font-light ${className}`}
     >
       {iconPosition === "left" && <span>{icon}</span>}
       {children}

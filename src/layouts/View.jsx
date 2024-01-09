@@ -3,6 +3,10 @@ import Card from "@components/Card";
 import SerachBox from "@components/SearchBox";
 import SectionCard from "@components/SectionCard";
 import ViewTable from "@components/ViewTable";
+import DropDownButton from "@components/DropDownButton";
+import search1Img from "@assets/search1.png";
+import head1Img from "@assets/head1.png";
+import head2Img from "@assets/head2.png";
 
 export default function View() {
   const data = [];
@@ -48,22 +52,26 @@ export default function View() {
             © How it works
           </TextButton>
         </div>
-        <div className="flex w-[600px] justify-center self-center">
-          <SerachBox />
+        <div className="flex justify-center self-center">
+          <SerachBox
+            icon={<img src={search1Img} />}
+            className="w-[400px] bg-[#F2F2F2] placeholder:text-[#808080]"
+            placeholder="Search features, tutorials, etc."
+          />
         </div>
         <div className="flex items-center space-x-3 pl-20">
-          <span className=" rounded-full bg-[#E6E6E6] p-5"></span>
-          <span className=" rounded-full bg-[#E6E6E6] p-5"></span>
+          <span className=" size-11 rounded-full p-2 bg-[#E6E6E6]">
+            <img src={head1Img} />
+          </span>
+          <span className=" size-11 rounded-full p-2 bg-[#E6E6E6]">
+            <img src={head2Img} />
+          </span>
         </div>
       </header>
       <div className="flex h-full w-full flex-col space-y-9 bg-[#FAFAFA] p-9">
         <SectionCard
           title="Overview"
-          action={
-            <div className="h-10 w-[120px] rounded-sm border bg-white">
-              Last Month
-            </div>
-          }
+          action={<DropDownButton>Last Month</DropDownButton>}
         >
           <div className="flex justify-between space-x-5">
             <Card title="Online orders" body="231" />

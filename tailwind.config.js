@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         inter: ["Inter", "san-serif"],
       },
+      colors: {
+        highlight: "#336CAF",
+      },
       textColor: {
         primary: "#1A181E",
         secondary: "#4D4D4D",
