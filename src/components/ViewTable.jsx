@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import OutlinedButton from "./OutlinedButton";
 import SerachBox from "./SearchBox";
-import TextButton from "./TextBUtton";
+import TextButton from "./TextButton";
 import search2Img from "@assets/search2.png"
 
 export default function ViewTable({ colHeadData, rowData }) {
