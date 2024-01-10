@@ -1,9 +1,9 @@
 export default function TextButton({icon, children, className}) {
   return (
-    <button className={`py-1 px-2 text-secondary text-sm rounded-md ${className}`}>
-      <span>
+    <button className={`min-w-fit flex justify-center items-center text-sm font-light text-secondary ${className}`}>
+      {icon && <span>
         {icon}
-      </span>
+      </span>}
       <span>
         {children}
       </span>

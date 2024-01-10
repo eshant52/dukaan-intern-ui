@@ -7,6 +7,7 @@ import DropDownButton from "@components/DropDownButton";
 import search1Img from "@assets/search1.png";
 import head1Img from "@assets/head1.png";
 import head2Img from "@assets/head2.png";
+import info2Img from "@assets/info2.png";
 
 export default function View() {
   const data = [];
@@ -48,8 +49,11 @@ export default function View() {
       <header className="flex items-center justify-between bg-white px-9 py-3">
         <div className="flex items-center space-x-5">
           <span className="text-primary font-light">Payments</span>
-          <TextButton className="text-secondary text-[0.8rem] font-light">
-            ? How it works
+          <TextButton
+            className="text-secondary text-[0.8rem] font-light space-x-1"
+            icon={<img className="size-3" src={info2Img} />}
+          >
+            How it works
           </TextButton>
         </div>
         <div className="flex justify-center self-center">
@@ -60,10 +64,10 @@ export default function View() {
           />
         </div>
         <div className="flex items-center space-x-3 pl-20">
-          <span className=" size-11 rounded-full p-2 bg-[#E6E6E6]">
+          <span className=" size-11 rounded-full bg-[#E6E6E6] p-2.5">
             <img src={head1Img} />
           </span>
-          <span className=" size-11 rounded-full p-2 bg-[#E6E6E6]">
+          <span className=" size-11 rounded-full bg-[#E6E6E6] p-2">
             <img src={head2Img} />
           </span>
         </div>
